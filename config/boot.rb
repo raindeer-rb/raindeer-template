@@ -1,12 +1,11 @@
 # frozen_string_literal: true
 
-# This file is for loading the Raindeer framework. You won't typically need to modify this file.
-# You could add your own boot script in "app/boot.rb" for example.
+# Automatically generated framework-level boot script. You won't typically need to modify this file.
+# You could add an application-level boot script in "app/boot.rb" for example.
 
 require 'raindeer'
 require 'raindeer/config_loader'
 
-# Optionally override your config below with environment variables.
 env = {
   host: ENV.fetch('RAIN_HOST', nil),
   port: ENV.fetch('RAIN_PORT', nil),
@@ -16,16 +15,20 @@ env = {
 
 config = Rain::ConfigLoader.load('./config/config.yaml', env)
 
-LowDependency.provide('rain.router') do
+Providers.define('rain.router') do
+  require_relative 'router/router'
   Rain::Router.new
 end
 
-LowDependency.provide('rain.matrix') do
-  Rain::Matrix.new(event_pool: Low::Providers['low.event.pool'])
+Providers.define('rain.matrix') do
+  require_relative 'matrix/matrix'
+  Rain::Matrix.new(event_pool: Providers['low.event.pool'])
 end
 
-LowDependency.provide('low.loop') do
-  LowLoop.new(config:, router: Low::Providers['rain.router'], renderer: Low::Providers['rain.matrix'])
+Providers.define('low.loop') do
+  require 'low_loop'
+  LowLoop.new(config:, router: Providers['rain.router'], renderer: Providers['rain.matrix'])
 end
 
-LowLoad.dirload(File.expand_path('../system', __FILE__))
+require 'lowload'
+LowLoad.dirload(File.expand_path('../app', __dir__))
