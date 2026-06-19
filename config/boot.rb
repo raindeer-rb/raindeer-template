@@ -4,7 +4,7 @@
 # You could add an application-level boot script in "app/boot.rb" for example.
 
 require 'raindeer'
-require 'raindeer/config_loader'
+require 'raindeer/lib/support/config_loader'
 
 env = {
   host: ENV.fetch('RAIN_HOST', nil),
