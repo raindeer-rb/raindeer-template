@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class LayoutNode < LowNode
-  def render(event:) # rubocop:disable Lint/UnusedMethodArgument
+  def render
     <html>
       <head></head>
       <body>
