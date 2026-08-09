@@ -7,18 +7,11 @@ class LayoutNode < LowNode
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
         <link rel="stylesheet" href="/style.css">
-
-        <link rel="stylesheet" href="/components/toc/toc.css">
-        <script src="/components/toc/toc.js" defer></script>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
       </head>
       <body>
         <header>
           <div class="container">
-            <a href="/"><span id="logo">{"Raindeer"}</span></a>
+            <a href="/"><span id="logo">{"Site Name"}</span></a>
             <nav id="main-menu">
               <ul>
                 <li><a href="/docs">{"Docs"}</a></li>
@@ -27,10 +20,8 @@ class LayoutNode < LowNode
             </nav>
           </div>
         </header>
-        
-        <div class="container overflow-auto">
-          <{ SidebarNode }>
 
+        <div class="container overflow-auto">
           <main id="content">
             <{ :slot }>
           </main>

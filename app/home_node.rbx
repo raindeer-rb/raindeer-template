@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-module App
-  class HomeNode < LowNode
-    observe '/'
+class HomeNode < LowNode
+  observe '/'
 
-    def render
-      <{ LayoutNode: }>
-        <p>{"This file can be edited in 'app/home_node.rb'."}
-      <{ :LayoutNode }>
-    end
+  def render
+    <{ LayoutNode: }>
+      <h1>{"Welcome to Raindeer"}</h1>
+
+      <p>{"Find me in '/app/home_node.rb'."}</p>
+    <{ :LayoutNode }>
   end
 end
