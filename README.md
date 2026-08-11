@@ -12,9 +12,11 @@ Welcome to your new Raindeer application.
 - `public` - Assets such as images, CSS and JS files
 - `spec` - Test the implementation of your application
 
-## Development
+## Server
 
 Start your local server with:
 ```
 rain server
 ```
+
+Visit [http://127.0.0.1:4133](http://127.0.0.1:4133)
