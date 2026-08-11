@@ -6,15 +6,15 @@ Welcome to your new Raindeer application.
 
 ## Directory Structure
 
-- `app` - Application files; routes, nodes, events, models and data.
+- `app` - Application files; routes, nodes, events and data
 - `bin` - Framework console scripts
 - `config` - Boot and configuration files
-- `public` - Files accessible to the public; images, assets such as CSS and JS files
-- `spec` - Test the implementation of your application here with RSpec
+- `public` - Assets such as images, CSS and JS files
+- `spec` - Test the implementation of your application
 
 ## Development
 
 Start your local server with:
 ```
-bin/server
+rain server
 ```
