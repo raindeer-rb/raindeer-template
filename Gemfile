@@ -6,8 +6,8 @@ gem 'raindeer'
 
 group :development do
   gem 'irb'
-  gem 'rake', '~> 13.0'
-  gem 'rubocop', require: false
+  gem 'rake'
+  gem 'rubocop'
 end
 
 group :testing do
