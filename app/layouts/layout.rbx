@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class LayoutNode < LowNode
+class Layout < LowNode
   def render
     <html>
       <head>
@@ -11,7 +11,7 @@ class LayoutNode < LowNode
       <body>
         <header>
           <div class="container">
-            <a href="/"><span id="logo">{"Site Name"}</span></a>
+            <a href="/"><span id="logo">{":app_name"}</span></a>
             <nav id="main-menu">
               <ul>
                 <li><a href="/docs">{"Docs"}</a></li>
