@@ -15,9 +15,9 @@ class HomeNode < LowNode
       <p>{"Edit this page at '/app/home_node.rb'."}</p>
 
       <p>
-        {"Find and replace `:app_name` or use "}
+        {"Set your application's name in '/config/translations.yaml' using "}
         <a href="https://raindeer.dev/docs/translations">{"Translations"}</a>
-        {" to set the placeholder to your application's name."}
+        {"."}
       </p>
     <{ :Layout }>
   end

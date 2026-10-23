@@ -16,7 +16,7 @@ class Layout < LowNode
       <body>
         <header>
           <div class="container">
-            <a id="logo" href="/">{":app_name"}</a>
+            <a id="logo" href="/">{:app_name}</a>
             <nav id="main-menu">
               <ul>
                 <li><a href="/posts"><i class="bi bi-journal-text"></i>{"Posts"}</a></li>
