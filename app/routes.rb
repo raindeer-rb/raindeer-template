@@ -2,4 +2,5 @@
 
 Raindeer.router do
   get '/'
+  get '/posts'
 end

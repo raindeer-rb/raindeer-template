@@ -2,7 +2,9 @@
 
 source 'https://rubygems.org'
 
-gem 'raindeer'
+gem 'lowdata', '~> 0.1'
+gem 'raindeer', '~> 0.10'
+gem 'sqlite3'
 
 group :development do
   gem 'irb'

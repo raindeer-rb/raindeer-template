@@ -14,6 +14,7 @@ class Layout < LowNode
             <a href="/"><span id="logo">{":app_name"}</span></a>
             <nav id="main-menu">
               <ul>
+                <li><a href="/posts">{"Posts"}</a></li>
                 <li><a href="https://raindeer.dev/docs/getting-started">{"Docs"}</a></li>
                 <li><a href="https://github.com/raindeer-rb/raindeer">{"Source"}</a></li>
               </ul>
