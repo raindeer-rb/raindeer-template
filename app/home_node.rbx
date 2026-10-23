@@ -5,9 +5,13 @@ class HomeNode < LowNode
 
   def render
     <{ Layout: }>
+      <figure class="blueprint-deer">
+        <img src="/assets/logo.png" alt="Raindeer logo, an illustrated deer with large antlers"/>
+        <figcaption>{"FIG. 1 — RAINIFER TARANDUS"}</figcaption>
+      </figure>
+
       <h1>{"Welcome to Raindeer"}</h1>
 
-      <p>{"Find me in '/app/home_node.rb'."}</p>
       <p>{"Edit this page at '/app/home_node.rb'."}</p>
 
       <p>
