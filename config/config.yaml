@@ -4,6 +4,7 @@ web_root: './public'
 debug_mode: true
 matrix_mode: true
 mirror_mode: false
+
 content_types:
   html: text/html
   css: text/css
@@ -12,3 +13,10 @@ content_types:
   jpg: image/jpeg
   png: image/png
   svg: image/svg+xml
+
+assets:
+  app.css:
+    - style.css
+    - components/*
+  app.js:
+    - components/*

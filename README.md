@@ -35,6 +35,20 @@ end
 
 Visit [http://127.0.0.1:4133/posts](http://127.0.0.1:4133/posts) to see them.
 
+## Assets
+
+CSS and JS files in `public` are combined into `public/app.css` and `public/app.js`, as listed under `assets` in `config/config.yaml`:
+```yaml
+assets:
+  app.css:
+    - style.css
+    - components/*
+  app.js:
+    - components/*
+```
+
+Add a component by creating a file like `public/components/card.css` or `public/components/card.js`. The server rebuilds the bundles when a file changes. See [Bundles](https://raindeer.dev/docs/static#bundles) for more.
+
 ## Server
 
 Start your local server with:

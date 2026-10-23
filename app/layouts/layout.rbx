@@ -6,7 +6,8 @@ class Layout < LowNode
       <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/app.css">
+        <script src="/app.js" defer></script>
       </head>
       <body>
         <header>

@@ -1,0 +1,11 @@
+footer {
+  margin-top: 2rem;
+  border-top: 1px solid #000;
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      margin-left: 2rem;
+    }
+  }
+}
