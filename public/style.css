@@ -9,6 +9,17 @@
   --rd-header-height: 3.75rem;
 }
 
+/* Stretch the content between header and footer so the footer sits at the bottom of short pages. */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > .container {
+    flex: 1;
+  }
+}
+
 h1 {
   margin-bottom: calc(var(--pico-typography-spacing-vertical) * 2);
 }
