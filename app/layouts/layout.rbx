@@ -12,12 +12,12 @@ class Layout < LowNode
       <body>
         <header>
           <div class="container">
-            <a href="/"><span id="logo">{":app_name"}</span></a>
+            <a id="logo" href="/">{":app_name"}</a>
             <nav id="main-menu">
               <ul>
-                <li><a href="/posts">{"Posts"}</a></li>
-                <li><a href="https://raindeer.dev/docs/getting-started">{"Docs"}</a></li>
-                <li><a href="https://github.com/raindeer-rb/raindeer">{"Source"}</a></li>
+                <li><a href="/posts"><i class="bi bi-journal-text"></i>{"Posts"}</a></li>
+                <li><a href="https://raindeer.dev/docs/getting-started"><i class="bi bi-book"></i>{"Docs"}</a></li>
+                <li><a href="https://github.com/raindeer-rb/raindeer"><i class="bi bi-github"></i>{"Source"}</a></li>
               </ul>
             </nav>
           </div>
@@ -32,10 +32,10 @@ class Layout < LowNode
         <footer>
           <div class="container">
             <ul>
-              <li><a href="https://reddit.com/r/raindeer">{"Reddit"}</a></li>
-              <li><a href="https://discord.gg/UBex4JQgnX">{"Discord"}</a></li>
-              <li><a href="https://www.rubyforum.org/tag/raindeer/97">{"Forum"}</a></li>
-              <li><a href="https://github.com/raindeer-rb/raindeer">{"GitHub"}</a></li>
+              <li><a href="https://reddit.com/r/raindeer"><i class="bi bi-reddit"></i>{"Reddit"}</a></li>
+              <li><a href="https://discord.gg/UBex4JQgnX"><i class="bi bi-discord"></i>{"Discord"}</a></li>
+              <li><a href="https://www.rubyforum.org/tag/raindeer/97"><i class="bi bi-chat-square-text"></i>{"Forum"}</a></li>
+              <li><a href="https://github.com/raindeer-rb/raindeer"><i class="bi bi-github"></i>{"GitHub"}</a></li>
             </ul>
           </div>
         </footer>
