@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'lowtype'
 require 'timecop'
 
 RSpec.configure do |config|
