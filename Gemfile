@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'raindeer', '~> 1.0'
+gem 'raindeer', '~> 1.0', '>= 1.0.4'
 gem 'sqlite3'
 
 group :development do
